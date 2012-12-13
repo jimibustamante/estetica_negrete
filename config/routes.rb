@@ -2,6 +2,9 @@ EsteticaNegrete::Application.routes.draw do
   resources :esteticas
 
   root :to => 'esteticas#index'
+  get '/contact', :to => 'esteticas#contact', :as => 'contact'
+
+  post '/send_contact', :to => "esteticas#send_mail", :as => "send_contact"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -9,15 +9,31 @@ class EsteticasController < ApplicationController
   end
 
   def conetnido_a
-    
+        
   end
 
   def contenido_b
     
   end
 
-  def contenido_c
+  def contact
     
+  end
+
+  def send_mail
+    Rails.logger.debug "PARAMS => #{params.inspect}"
+    Rails.logger.debug "Entramos a SEND_MAIL"
+    contact = ContactEmail.new
+    Rails.logger.debug "Se instancia ContactEmail"
+    begin
+      contact.create_contact(params)
+      Rails.logger.debug "\nENVIAMOS CORREO \n" 
+      UserMailer.send_contact_email(contact).deliver
+      redirect_to root_path, :notice => "Se ha enviado el correo."
+    rescue Exception => e
+      Rails.logger.debug "ERROR => #{e.message}"
+      redirect_to contact_path, :error => "No se ha podido enviar el correo."
+    end
   end
   # GET /esteticas/1
   # GET /esteticas/1.json
