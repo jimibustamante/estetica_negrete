@@ -8,6 +8,17 @@ class EsteticasController < ApplicationController
     end
   end
 
+  def conetnido_a
+    
+  end
+
+  def contenido_b
+    
+  end
+
+  def contenido_c
+    
+  end
   # GET /esteticas/1
   # GET /esteticas/1.json
   def show
