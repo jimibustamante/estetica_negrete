@@ -1,0 +1,9 @@
+development:
+  email: 'jimibustamante@gmail.com'
+  password: 'winnie'
+test:
+  email: 'jimibustamante@gmail.com'
+  password: 'winnie'
+production:
+  email: 'contacto.deseungusto@gmail.com'
+  password: 'esteticanegrete'
