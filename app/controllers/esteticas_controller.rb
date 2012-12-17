@@ -8,12 +8,13 @@ class EsteticasController < ApplicationController
     end
   end
 
-  def conetnido_a
-        
-  end
-
-  def contenido_b
-    
+  def content
+    case params[:content]
+    when 'content_a'
+      render 'content_a'
+    when 'content_b'
+      render 'content_b'
+    end
   end
 
   def contact
