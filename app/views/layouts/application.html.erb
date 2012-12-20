@@ -19,15 +19,16 @@
     <div class="navbar-inner">
       <ul class="nav">
         <li class="active"><a href=<%= root_url %>>Home</a></li>
-        <li><a href=<%= content_url(:content => 'content_a')  %>>Contenido A</a></li>
-        <li><a href=<%= content_url(:content => 'content_b') %>>Contenido B</a></li>
+        <li><a href=<%= content_url(:content => 'prp')  %>>PRP</a></li>
+        <li><a href=<%= content_url(:content => 'acido_hialuronico') %>>Ácido Hialurónico</a></li>
+        <li><a href=<%= content_url(:content => 'toxina_butolinica')  %>>Toxina Butolínica</a></li>
         <li><a href= <%= contact_url %>>Contáctanos</a></li>
       </ul>
     </div>
   </div>
   <%= render :partial => "/layouts/messages" %>
   <div class="row">
-    <div class="span3">
+    <div class="span2">
       <h4>Sobre Nosotros</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -38,7 +39,7 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-    <div class="span9">
+    <div class="span10">
       <%= yield %>
     </div>
   </div>
