@@ -18,8 +18,8 @@
   <%= render :partial => "/layouts/messages" %>
   <br>
   <div class="row">
-    <div class="span2">
-      <ul class="nav nav-list">
+    <div class="span3">
+      <ul id="menu-lateral" class="nav nav-list">
         <li class="home"><a href=<%= root_url %>>Home</a></li>
         <li class="nav-header">Te ofrecemos</li>
         <li class="prp"><a href=<%= content_url(:content => 'prp')  %>>PRP</a></li>
@@ -29,7 +29,7 @@
         <li class="contact"><a href= <%= contact_url %>>Contáctanos</a></li>
       </ul>
     </div>
-    <div class="span10">
+    <div class="span9">
       <%= yield %>
     </div>
   </div>
