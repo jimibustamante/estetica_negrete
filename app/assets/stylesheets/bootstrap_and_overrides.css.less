@@ -5,6 +5,7 @@
 @color-fondo: #4E4C4D;
 @morado:#B66773;
 @activado:#F40673;
+@nav-header-color:#52323B;
 html{
   body{
     .row{
@@ -43,7 +44,7 @@ html{
       }
     }
   }
-  li, li.nav-header{
+  li{
     line-height: 35px !important;
     a{
       color: @color-letra;
@@ -52,6 +53,10 @@ html{
         color: @morado;
       }
     }
+  }
+  li.nav-header{
+    text-shadow:none !important;
+    color: @nav-header-color;
   }
 }
 
