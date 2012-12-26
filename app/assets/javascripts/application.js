@@ -37,6 +37,7 @@ $(document).ready(function(){
 	  break;
 	case '/contact':
 	  ActivaItem($('li.contact'))
+	  break;
 	default:
 	  ActivaItem($('li.home'))
 }
