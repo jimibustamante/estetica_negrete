@@ -1,3 +1,6 @@
+
+
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -14,3 +17,41 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+$(document).ready(function(){
+	console.log(window.location.pathname)
+// Función para activar ítem en menú al cargar la página
+	var url = window.location.pathname; 
+	switch(url)
+	{
+	case '':
+	  ActivaItem($('li.home'))
+	  break;
+	case '/prp':
+	  ActivaItem($('li.prp'))
+	  break;
+	case '/acido_hialuronico':
+	  ActivaItem($('li.acido_hialuronico'))
+	  break;
+	case '/toxina_butolinica':
+	  ActivaItem($('li.toxina_butolinica'))
+	  break;
+	case '/contact':
+	  ActivaItem($('li.contact'))
+	  break;
+	default:
+	  ActivaItem($('li.home'))
+}
+
+// Función para activar ítem cliqueado antes de request.
+	$('ul li a').click(function(e) {
+	  // Le quitamos clase 'active' al ítem seleccionado.
+	  $('ul li.active').removeClass('active')
+	  // Activamos el ítem cliqueado.
+	  $(this).parent().addClass('active')  
+	});
+})
+
+function ActivaItem(item){
+	// $('ul li.active').removeClass('active')
+	item.addClass('active')
+}
