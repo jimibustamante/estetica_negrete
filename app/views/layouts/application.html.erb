@@ -15,29 +15,19 @@
   <div class="head-banner">
     <%= image_tag('banner.jpg')%>
   </div>
-  <div class="navbar">
-    <div class="navbar-inner">
-      <ul class="nav">
-        <li><a href=<%= root_url %>>Home</a></li>
-        <li><a href=<%= content_url(:content => 'prp')  %>>PRP</a></li>
-        <li><a href=<%= content_url(:content => 'acido_hialuronico') %>>Ácido Hialurónico</a></li>
-        <li><a href=<%= content_url(:content => 'toxina_butolinica')  %>>Toxina Butolínica</a></li>
-        <li><a href= <%= contact_url %>>Contáctanos</a></li>
-      </ul>
-    </div>
-  </div>
   <%= render :partial => "/layouts/messages" %>
+  <br>
   <div class="row">
     <div class="span2">
-      <h4>Sobre Nosotros</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <ul class="nav nav-list">
+        <li class="home"><a href=<%= root_url %>>Home</a></li>
+        <li class="nav-header">Te ofrecemos</li>
+        <li class="prp"><a href=<%= content_url(:content => 'prp')  %>>PRP</a></li>
+        <li class="acido_hialuronico"><a href=<%= content_url(:content => 'acido_hialuronico') %>>Ácido Hialurónico</a></li>
+        <li class="toxina_butolinica"><a href=<%= content_url(:content => 'toxina_butolinica')  %>>Toxina Butolínica</a></li>
+        <li class="divider"></li>
+        <li class="contact"><a href= <%= contact_url %>>Contáctanos</a></li>
+      </ul>
     </div>
     <div class="span10">
       <%= yield %>
@@ -46,4 +36,5 @@
 </div>
 
 </body>
+
 </html>
