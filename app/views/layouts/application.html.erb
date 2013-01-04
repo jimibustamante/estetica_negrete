@@ -6,7 +6,9 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
   <![endif]-->
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "flexslider", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery.flexslider" %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -22,7 +24,7 @@
       <ul id="menu-lateral" class="nav nav-list">
         <li class="home"><a href=<%= root_url %>>Home</a></li>
         <li class="nav-header">Te ofrecemos</li>
-        <li class="prp"><a href=<%= content_url(:content => 'prp')  %>>PRP</a></li>
+        <li class="prp"><a href=<%= content_url(:content => 'prp')  %>>Plasma Rico en Plaquetas</a></li>
         <li class="acido_hialuronico"><a href=<%= content_url(:content => 'acido_hialuronico') %>>Ácido Hialurónico</a></li>
         <li class="toxina_butolinica"><a href=<%= content_url(:content => 'toxina_butolinica')  %>>Toxina Butolínica</a></li>
         <li class="divider"></li>
