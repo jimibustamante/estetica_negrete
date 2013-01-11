@@ -2,18 +2,18 @@
   $(window).load(function() {
     $('.flexslider').flexslider({
       animation: "slide",
-      slideshowSpeed: 5000
+      slideshowSpeed: 5000,
     });
   });
 </script>
 
-<div class="row-fluid">
-  <div class="span8 offset2">
-  <%= render :partial => "/layouts/slider" %>
+<div>
+  <div class="slider-container">
+    <%= render :partial => "/layouts/slider" %>
   </div>
-  <br><br>
-  <div class="span8 offset2">
-    <p>
+  <br>
+  <div >
+    <p style="font-size:16px">
       En nuestra clínica, nos preocupamos por un concepto de belleza integral, entregando múltiples
       opciones desde donde podemos mejorar la imagen de nuestro rostro, y moderno ya que llevamos
       a cabo nuestros tratamientos al alero de la vanguardia científica en cosmetología, utilizando
@@ -22,9 +22,9 @@
       Sabemos que la fisonomía de cada paciente es única, es por esto que nos preocupamos de cada
       detalle para conservar un estilo único y personal en cada tratamiento.
     </p>
-    <p>
-      Venga a conocernos y ... DESE UN GUSTO!!!.
-    </p>
+    <p style="font-size:18px;text-align:center">
+      ¡VENTA A CONOCERNOS Y  DESE UN GUSTO!
+    </p
   </div>
 </div>
 

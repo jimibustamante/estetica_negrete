@@ -14,15 +14,19 @@
 </head>
 <body>
 <div class="container">
-  <div class="head-banner">
-    <%= image_tag('banner.jpg')%>
+  <div class="row">
+    <div class="head-banner span12">
+      <%= image_tag('banner.jpg')%>
+    </div>
   </div>
-  <%= render :partial => "/layouts/messages" %>
+  <div class="row">
+    <%= render :partial => "/layouts/messages" %>
+  </div>
   <br>
   <div class="row">
     <div class="span3">
       <ul id="menu-lateral" class="nav nav-list">
-        <li class="home"><a href=<%= root_url %>>Home</a></li>
+        <li class="home" ><a href=<%= root_url %>>Home</a></li>
         <li class="nav-header">Te ofrecemos</li>
         <li class="prp"><a href=<%= content_url(:content => 'prp')  %>>Plasma Rico en Plaquetas</a></li>
         <li class="acido_hialuronico"><a href=<%= content_url(:content => 'acido_hialuronico') %>>Ácido Hialurónico</a></li>

@@ -6,6 +6,7 @@
 @morado:#B66773;
 @activado:#F40673;
 @nav-header-color:#52323B;
+@max-height-slide: 470px; 
 html{
   body{
     .row{
@@ -62,6 +63,26 @@ html{
   li.nav-header{
     text-shadow:none !important;
     color: @nav-header-color;
+  }
+}
+
+//Estilos Slider
+div.slider-container{
+  .flexslider{
+    max-height: @max-height-slide;
+    // max-width: 640px;
+    .flex-viewport{
+      max-height: @max-height-slide;
+      // max-width: 640px;
+      text-align: center;
+      img{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        max-height: 360px;
+        width: auto;
+      }
+    }    
   }
 }
 
