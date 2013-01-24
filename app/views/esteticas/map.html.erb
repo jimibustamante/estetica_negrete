@@ -1,0 +1,13 @@
+<div class="row-fluid">
+	<legend>Encuentranos Aquí</legend>
+	<div class="span6">
+		<p></p>
+		<%= gmaps(
+			:map_options => {"auto_zoom" => false, "zoom" => 17}, 
+			:markers => { "data" => @json, "options" =>{
+				"picture" => "assets/logo_marker.png",
+				"width" => 50,
+				"length" => 50
+			}}) %>
+	</div>
+</div>

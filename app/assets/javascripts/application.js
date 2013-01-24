@@ -18,7 +18,7 @@
 //= require twitter/bootstrap
 //= require_tree .
 $(document).ready(function(){
-	console.log(window.location.pathname)
+	// console.log(window.location.pathname)
 // Función para activar ítem en menú al cargar la página
 	var url = window.location.pathname; 
 	switch(url)
@@ -37,6 +37,9 @@ $(document).ready(function(){
 	  break;
 	case '/contact':
 	  ActivaItem($('li.contact'))
+	  break;
+	case '/map':
+	  ActivaItem($('li.map'))
 	  break;
 	default:
 	  ActivaItem($('li.home'))

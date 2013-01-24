@@ -1,9 +1,30 @@
 development:
   email: 'jimibustamante@gmail.com'
   password: 'winnie'
+  map:
+    name: 'Clínica DeseUnGusto'
+    address: 'Colipi 484'
+    city: 'Copiapó'
+    country: 'Chile'
+    latitude: '-27.366564'
+    longitude: '-70.331303'
 test:
   email: 'jimibustamante@gmail.com'
   password: 'winnie'
+  map:
+    name: 'Clínica DeseUnGusto'
+    address: 'Colipi 484'
+    city: 'Copiapo'
+    country: 'Chile'
+    latitude: '-27.366564'
+    longitude: '-70.331303'
 production:
   email: 'contacto.deseungusto@gmail.com'
   password: 'esteticanegrete'
+  map:
+    name: 'Clínica DeseUnGusto'
+    address: 'colipi 484'
+    city: 'copiapo'
+    country: 'chile'
+    latitude: '-27.366564'
+    longitude: '-70.331303'

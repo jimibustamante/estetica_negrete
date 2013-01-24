@@ -26,6 +26,16 @@ class EsteticasController < ApplicationController
       redirect_to contact_path, :error => "No se ha podido enviar el correo."
     end
   end
+
+  def map
+    map = Map::set_map
+    logger.debug { "#{map.inspect}" }
+    @json = map.to_gmaps4rails
+  end
+  
+  def get_address
+  end
+
   # GET /esteticas/1
   # GET /esteticas/1.json
   def show

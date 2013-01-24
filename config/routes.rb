@@ -5,8 +5,8 @@ EsteticaNegrete::Application.routes.draw do
   get '/contact', :to => 'esteticas#contact', :as => 'contact'
 
   post '/send_contact', :to => "esteticas#send_mail", :as => "send_contact"
+  match '/map', :to => 'esteticas#map', :as => 'map'
   get '/:content', :to => 'esteticas#content', :as => "content"
-
 
   
   # The priority is based upon order of creation:
