@@ -31,6 +31,7 @@ class EsteticasController < ApplicationController
     map = Map::set_map
     logger.debug { "#{map.inspect}" }
     @json = map.to_gmaps4rails
+    logger.debug { "\n#{@json.inspect}"}
   end
   
   def get_address

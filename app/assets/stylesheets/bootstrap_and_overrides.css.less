@@ -155,6 +155,10 @@ div.slider-container{
    border:#555555 2px solid;
 }
 
+// Patch para bug entre Bootstrap y Gmaps4Rails
+#map label { width: auto; display:inline; }
+#map img { max-width: none;}
+
 // Set the correct sprite paths
 @iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings");
 @iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white");

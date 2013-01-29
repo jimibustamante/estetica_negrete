@@ -3,7 +3,19 @@
 	<div class="span6">
 		<p></p>
 		<%= gmaps(
-			:map_options => {"auto_zoom" => false, "zoom" => 17}, 
+			:map_options => {
+				"auto_zoom" => false,
+				"zoom" => 17,
+				"zoom_control" => true,
+				"zoom_control_opt" => {
+					"style" => "SMALL",
+					"position" => "TOP_LEFT" 
+				},
+				"panControl" => true,
+		        "street_view_control" => false,
+		        "map_type_control" => false,
+		        "overview_map_control" => false
+		    }, 
 			:markers => { "data" => @json, "options" =>{
 				"picture" => "assets/logo_marker.png",
 				"width" => 50,
