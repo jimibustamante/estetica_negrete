@@ -20,6 +20,7 @@
         <%= image_tag('banner.jpg')%>
       </div>
     </div>
+    <br>
     <div class="row">
       <%= render :partial => "/layouts/messages" %>
     </div>
@@ -28,6 +29,7 @@
       <div class="span3">
         <ul id="menu-lateral" class="nav nav-list">
           <li class="home" ><a href=<%= root_url %>>Home</a></li>
+          <li class="who_we_are"><a href=<%= who_we_are_url %>>Quiénes somos</a></li>
           <li class="nav-header">Te ofrecemos</li>
           <li class="prp"><a href=<%= content_url(:content => 'prp')  %>>Plasma Rico en Plaquetas</a></li>
           <li class="acido_hialuronico"><a href=<%= content_url(:content => 'acido_hialuronico') %>>Ácido Hialurónico</a></li>

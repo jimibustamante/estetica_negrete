@@ -8,6 +8,10 @@ class EsteticasController < ApplicationController
     end
   end
 
+  def google
+    render 'google470612d70cfe2ed0', :layout => false
+  end
+
   def content
     render "#{params[:content]}"
   end

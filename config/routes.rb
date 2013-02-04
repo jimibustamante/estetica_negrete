@@ -2,11 +2,13 @@ EsteticaNegrete::Application.routes.draw do
   resources :esteticas
 
   root :to => 'esteticas#index'
+  get '/google470612d70cfe2ed0', :to => 'esteticas#google'
   get '/contact', :to => 'esteticas#contact', :as => 'contact'
 
-  post '/send_contact', :to => "esteticas#send_mail", :as => "send_contact"
+  post '/send_contact', :to => 'esteticas#send_mail', :as => 'send_contact'
   match '/map', :to => 'esteticas#map', :as => 'map'
-  get '/:content', :to => 'esteticas#content', :as => "content"
+  get '/who_we_are', :to => 'esteticas#who_we_are', :as => 'who_we_are'
+  get '/:content', :to => 'esteticas#content', :as => 'content'
 
   
   # The priority is based upon order of creation:

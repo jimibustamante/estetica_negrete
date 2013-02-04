@@ -7,7 +7,7 @@
 @activado:#F40673;
 @nav-header-color:#52323B;
 @max-height-slide: 470px;
-@social-icon-size:50px;
+@social-icon-size:30px;
 html{
   body{
     // width: 100%;
@@ -95,10 +95,18 @@ div.slider-container{
   padding-top: 20px;
   height:auto;
   width: 100%;
+  padding-bottom: 5%;
+  
+  ul{
+    list-style-type:square;
+  }
+
   legend{
     color: @color-fondo;
   }
-
+  a{
+    color: #7A00FF;
+  }
   .siguenos{
     background-color: @morado; 
     a{
@@ -108,8 +116,8 @@ div.slider-container{
       background-size: @social-icon-size !important;
       margin-left: 15%;
       // Bordes
-      -webkit-border-radius: 10px; /* Safari 3-4, iOS 1-3.2, Android ≤1.6 */
-              border-radius: 10px; /* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+      -webkit-border-radius: 5px; /* Safari 3-4, iOS 1-3.2, Android ≤1.6 */
+              border-radius: 5px; /* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
 
       /* useful if you don't want a bg color from leaking outside the border: */
       -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
