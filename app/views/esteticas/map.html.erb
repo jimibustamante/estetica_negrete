@@ -4,8 +4,10 @@
 		<p></p>
 		<%= gmaps(
 			:map_options => {
+				:raw => "{scrollwheel: false}",
 				"auto_zoom" => false,
 				"zoom" => 17,
+				"scrollwheel" => false,
 				"zoom_control" => true,
 				"zoom_control_opt" => {
 					"style" => "SMALL",
