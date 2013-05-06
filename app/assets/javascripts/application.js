@@ -50,6 +50,9 @@ $(document).ready(function(){
 	case '/toxina_butolinica':
 	  ActivaItem($('li.toxina_butolinica'))
 	  break;
+	case '/soft_lift':
+	  ActivaItem($('li.soft_lift'))
+	  break;	  
 	case '/contact':
 	  ActivaItem($('li.contact'))
 	  break;
