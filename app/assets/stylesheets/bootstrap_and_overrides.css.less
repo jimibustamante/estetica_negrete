@@ -97,6 +97,9 @@ div.slider-container{
   width: 100%;
   padding-bottom: 5%;
   
+  .social_net{
+    clear: both;
+  }
   ul{
     list-style-type:square;
   }
@@ -213,13 +216,25 @@ div.slider-container{
 
 
 @media (max-width: 767px){
+  .menu{
+    text-align: center;
+  }
   .map_container{
     width: 95%;
   }
 
   .gmaps4rails_map{
     width: 100%;
-  } 
+  }
+  #footer{
+    ul{
+      list-style: none;
+    }
+    text-align: center;
+    a.red_social{
+      margin-left: 22%;
+    }
+  }
 }
 
 

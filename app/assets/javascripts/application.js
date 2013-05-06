@@ -38,6 +38,9 @@ $(document).ready(function(){
 	case '':
 	  ActivaItem($('li.home'))
 	  break;
+	case '/who_we_are':
+	  ActivaItem($('li.who_we_are'))
+	  break;
 	case '/prp':
 	  ActivaItem($('li.prp'))
 	  break;

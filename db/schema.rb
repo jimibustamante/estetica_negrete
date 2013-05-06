@@ -13,15 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130123164332) do
 
-  create_table "addresses", :force => true do |t|
-    t.string   "name"
-    t.float    "latitude"
-    t.float    "longitude"
-    t.boolean  "gmaps"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "contact_emails", :force => true do |t|
     t.string   "name"
     t.string   "email"
