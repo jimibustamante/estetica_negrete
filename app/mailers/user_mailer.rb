@@ -5,6 +5,6 @@ class UserMailer < ActionMailer::Base
   	@name = contact_email.name
   	@email = contact_email.email
   	@comment = contact_email.comment
-  	mail(:to => APP_CONFIG['email'], :subject => "Contacto DeseUnGusto")
+  	mail(:to => "rodrigoignacionegrete@gmail.com", :subject => "Contacto DeseUnGusto")
   end
 end
