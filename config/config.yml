@@ -1,6 +1,6 @@
 development:
   email: 'jimibustamante@gmail.com'
-  password: 'winnie'
+  password: '*****'
   map:
     name: 'Clínica DeseUnGusto'
     address: 'Colipi 484'
@@ -10,7 +10,7 @@ development:
     longitude: '-70.331303'
 test:
   email: 'jimibustamante@gmail.com'
-  password: 'winnie'
+  password: '*****'
   map:
     name: 'Clínica DeseUnGusto'
     address: 'Colipi 484'
